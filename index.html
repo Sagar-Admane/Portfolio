@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- First Hero Section -->
     <div class="#home" style="margin-bottom: 95px;">
         <div class="header">
             <div class="nav">
@@ -15,12 +16,12 @@
                 </div>
                 <div class="navigator">
                     <div class="nav-a">
-                        <a href="">HOME</a>
-                        <a href="">ABOUT US</a>
-                        <a href="">MY WORKS</a>
+                        <a href="index.html">HOME</a>
+                        <a href="index2.html">ABOUT US</a>
+                        <a href="index.html">MY WORKS</a>
                     </div>
                     <div class="nav-btn">
-                        <button>CONTACT</button>
+                        <a href="./contact.html"><button>CONTACT</button></a>
                     </div>
                 </div>
             </div>
@@ -32,7 +33,7 @@
         </div>
         <div class="title">
             <div class="title-heading">
-                <p>Designing <span class="a">Experiences</span>,<br /> 
+                <p>Designing <span class="a"></span><br /> 
                     One Interaction at a <span class="b">Time.</span></p>
             </div>
             <div class="title-info">
@@ -62,37 +63,49 @@
         </div>
         <div class="pproject">
         <div class="projects">
+            <div class="card">
             <div class="travel-planner">
-                <img src="./Photos/travel.svg" alt="">
+                <div class="thefront"><img src="./Photos/travel.svg" alt=""></div>
+                <div class="theback"><img src="./Photos/travel.svg" alt=""></div>
                 <div>
                     <button class="btn">Landing Page</button>
                     <button class="btn">Ui & Ux</button>
                     <button class="view"><p>View Project </p><img src="./Photos/Arrow_Up_Right_MD.svg" alt=""></button>
                 </div>
             </div>
+            </div>
+            <div class="card">
             <div class="travel-planner">
-                <img src="./Photos/rare.svg" alt="">
+                <div class="thefront"><img src="./Photos/rare.svg" alt=""></div>
+                <div class="theback"><img src="./Photos/rare.svg" alt=""></div>
                 <div>
                     <button class="btn">Landing Page</button>
                     <button class="btn">Ui & Ux</button>
                     <button class="view"><p>View Project </p><img src="./Photos/Arrow_Up_Right_MD.svg" alt=""></button>
                 </div>
             </div>
+            </div>
+            <div class="card">
             <div class="travel-planner">
-                <img src="./Photos/furry.svg" alt="">
+                <div class="thefront"><img src="./Photos/furry.svg" alt=""></div>
+                <div class="theback"><img src="./Photos/furry.svg" alt=""></div>
                 <div>
                     <button class="btn">Landing Page</button>
                     <button class="btn">Ui & Ux</button>
                     <button class="view"><p>View Project </p><img src="./Photos/Arrow_Up_Right_MD.svg" alt=""></button>
                 </div>
             </div>
+            </div>
+            <div class="card">
             <div class="travel-planner">
-                <img src="./Photos/link.svg" alt="">
+                <div class="thefront"><img src="./Photos/link.svg" alt=""></div>
+                <div class="theback"><img src="./Photos/link.svg" alt=""></div>
                 <div>
                     <button class="btn">Landing Page</button>
                     <button class="btn">Ui & Ux</button>
                     <button class="view"><p>View Project </p><img src="./Photos/Arrow_Up_Right_MD.svg" alt=""></button>
                 </div>
+            </div>
             </div>
         </div>
     </div>
@@ -100,6 +113,9 @@
             <button><p>Explore more</p></button>
         </div>
     </div>
+
+    <!-- Testimonal -->
+
     <div class="ptestimonal">
         <div class="testimonal">
             <div class="test-head">
@@ -117,6 +133,9 @@
             </div>
         </div>
     </div>
+
+    <!-- Footer -->
+
     <div id="footer">
         <div class="footer-first">
             <div>
@@ -143,8 +162,18 @@
             </div>
         </div>
     </div>
-    
-    
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- Looped text animation on Hero section js -->
+
+    <script>
+        var typed = new Typed(".a",{
+            strings : ["Experiences", "Creativity"],
+            typeSpeed : 150,
+            backSpeed : 150,
+            loop : true
+        })
+    </script>
     
 </body>
 </html>

@@ -112,6 +112,9 @@ body {
 
 .title-heading {
   /* background-color: blue; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #fff;
   text-align: center;
   font-size: 45px;
@@ -476,3 +479,24 @@ text-transform: lowercase;
     display: flex;
     gap: 12px;
 }
+
+
+
+.thefront{
+  position: relative;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;  
+}
+
+.card:hover .thefront{
+  transform: rotateY(360deg);
+}
+
+.theback{
+  position: absolute;
+  top: 0;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+}
+
